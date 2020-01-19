@@ -1,0 +1,102 @@
+body {
+  background-color: #010400;
+  overflow-y: hidden;
+  --color_fuente: #23be23;
+}
+
+a {
+  float: right;
+}
+
+noscript,
+h4,
+a,
+summary,
+.tiempo,
+.primosObtenidos,
+.ultimoPrimo {
+  color: #23be23; /* Para que se visualice en Internet Explorer */	
+  color: var(--color_fuente);
+  font-family: courier;
+}
+
+hr {
+  border: 0 none var(--color_fuente);
+  border-top: 1px solid var(--color_fuente);
+}
+
+progress {
+  width: 500px;
+  -webkit-appearance: none;
+}
+
+progress::-webkit-progress-bar {
+  background: black;
+  border: 1px solid var(--color_fuente);
+}
+
+progress::-moz-progress-bar {
+  background: black;
+  border: 1px solid var(--color_fuente);
+}
+
+progress::-webkit-progress-value {
+  background: var(--color_fuente);
+  border: 1px solid var(--color_fuente);
+}
+
+.primosObtenidos {
+  /* Mostrar css del listado de numeros primos obtenidos */
+  width: 80%;
+  word-break: break-all;
+  word-wrap: break-word;
+}
+
+.numeroPrimo {
+  text-align: center;
+  width: 15.5%;
+  border: 1px solid var(--color_fuente);
+  position: absolute;
+  top: 10%;
+  right: 10px;
+}
+
+.ultimoPrimo {
+  font-weight: bold;
+  text-align: center;
+}
+
+.tiempoProceso {
+  width: 15.5%;
+  border: 1px solid var(--color_fuente);
+  position: absolute;
+  right: 10px;
+  top: 30%;
+  text-align: center;
+}
+
+.detalles {
+  border: 1px solid var(--color_fuente);
+  color: var(--color_fuente);
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  width: 15.5%;
+}
+
+.vl {
+  border-left: 1px solid var(--color_fuente);
+  height: 100%;
+  position: absolute;
+  right: 20.4%;
+  top: 9.5%;
+  margin-left: -3px;
+}
+
+.ocultar {
+  display: none;
+}
+
+.mostrar {
+  display: block;
+}

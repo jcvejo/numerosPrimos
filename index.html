@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+
+<head>
+	<title>Números primos</title>
+	<meta charset='utf-8'>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/animaciones.css">
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	
+</head>
+
+<body>
+	<div id='principal' class='primosObtenidos'>
+		<h4>Calculando números primos...<span class='animated flash'>|</span></h4>
+		<hr>
+		<div id='progreso'>
+			<progress max='100' value='0'></progress><i id='porcentaje'>0%</i>
+			<p id='infoCarga'></p>
+		</div>
+		<div id='primosObtenidos' class='ocultar'>
+
+			<img src='img/tenor.gif' alt='datos en proceso' width="70%">
+		</div>
+	</div>
+	<div id='ultimoNumeroPrimo' class='ocultar numeroPrimo'>
+		<h4>Último número primo</h4>
+		<div id='numeroPrimo' class='ultimoPrimo'>Analizando<span class='animated flash'>...</span></div>
+	</div>
+	<div id='tiempoProceso' class='ocultar tiempoProceso'>
+		<h4>Tiempo de proceso </h4>
+		<div id='tiempo' class='tiempo'>Analizando<span class='animated flash'>...</span></div>
+	</div>
+	<div id='detalles' class='ocultar detalles'>
+		<details open>
+			<summary>Procesando datos</summary>
+			<img src='img/numbers.gif' alt='datos del proceso' width="100%">
+		</details>
+	</div>
+	<div class="vl"></div>
+	<a id='link' href='#' class='ocultar'>Descargar backup</a>
+</body>
+<script src="js/funciones.js"></script>
+<noscript>JavaScript se encuentra desactivado.</noscript>
+</html>
